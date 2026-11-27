@@ -36,6 +36,7 @@ O dropdown da tela de medicamentos familiar dependia apenas de `localStorage` e 
 - O painel do familiar agora carrega todos os idosos vinculados, permite selecionar um deles, oferece o atalho **Escanear outro idoso** e inclui a conversa na mesma tela.
 - O painel do idoso ganhou sino de notificações e conversa com familiar vinculado, com controles grandes e mensagens com leitura ao vivo.
 - `chat.js` atualiza mensagens e notificações a cada 2 segundos, além do Web Push já existente, para reduzir a sensação de atraso quando a página está aberta.
+- No mobile, o painel do sino do idoso agora é posicionado dentro da viewport, pode rolar quando necessário e usa texto e controles maiores; a regra é escopada à página do idoso para não alterar o painel familiar.
 - O cookie de sessão local mantém validade de 30 dias; a configuração de produção já usa `max-age` e `timeout` de 30 dias. A persistência após reinício do servidor continua dependendo de Spring Session com JDBC/Redis, conforme a nota anterior.
 
 
